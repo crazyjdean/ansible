@@ -1,5 +1,5 @@
 ---
-- hosts: centos9
+- hosts: centos10
   become: true
   tasks:
     - name: Print OS info
