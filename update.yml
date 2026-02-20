@@ -8,7 +8,6 @@
         name: "*"
         state: latest
         update_cache: yes
-        autoremove: yes
       when:
         - ansible_facts['os_family'] == "RedHat"
         - ansible_facts['distribution_major_version'] is defined
