@@ -1,5 +1,6 @@
 ---
 - hosts: openvpn
+  remote_user: crazyjdean
   become: true
   tasks:
     - name: Print OS info
