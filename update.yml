@@ -1,6 +1,6 @@
 ---
 - name: Centos 9+/Redhat 9+ Linux patch management
-  hosts: all
+  hosts: centos9
   become: yes
   tasks:
   ansible.builtin.dnf:
