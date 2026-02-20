@@ -1,5 +1,5 @@
 ---
-- name: Centos 9+/Redhat 9+ Linux patch management
+- name: Update & upgrade on Ubuntu/Debian
   hosts: centos9
   become: yes
   tasks:
