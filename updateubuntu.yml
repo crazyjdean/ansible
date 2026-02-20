@@ -1,6 +1,6 @@
 ---
 - name: Update & upgrade on Ubuntu/Debian
-  hosts: centos9
+  hosts: openvpn
   become: yes
   tasks:
     - name: Update & upgrade on Ubuntu/Debian
