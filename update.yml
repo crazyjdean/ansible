@@ -3,7 +3,7 @@
   hosts: centos9
   become: yes
   tasks:
-- name: Upgrade all packages on CentOS Stream 9+/RHEL 9+ (dnf)
+    - name: Centos 9+/Redhat 9+ Linux patch management
       ansible.builtin.dnf:
         name: "*"
         state: latest
