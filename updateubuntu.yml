@@ -1,0 +1,12 @@
+---
+- name: Centos 9+/Redhat 9+ Linux patch management
+  hosts: centos9
+  become: yes
+  tasks:
+    - name: Update & upgrade on Ubuntu/Debian
+      ansible.builtin.apt:
+        update_cache: yes
+        upgrade: dist
+        autoremove: yes
+        autoclean: yes
+      when: ansible_facts['os_family'] == "Debian"
